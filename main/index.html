@@ -46,50 +46,70 @@
         <!--"img" nos permite agregar un archivo de tipo imagen "src" indica su direccion y "alt" es un texto alternativo en que de que no se cargue la imagen-->
         <img src="../imgFolder/green-background.png" alt="foto perfil de nosotros">
       </div>
-      <div class="contenidoSobNos">
+      <div class="contenido-sobre-nosotros">
         <!--titulo de tipo 2, se puede usar multiples veces, sirve para organizar el contenido-->
         <h2>Sobre Nosotros</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ad repellat quae nihil nisi laborum rerum delectus eaque reiciendis, quia ullam laudantium perferendis pariatur voluptates at odio amet incidunt. Vero!</p>
       </div>
     </section>
     <section id="proyAnt">
-      <div class="organizadorProyAnts">
+      <div class="organizador-proyectos-anteriores">
         <div class="cabezal">
           <h2>Proyectos anteriores</h2>
         </div>
         <!-- la clase subCabezal son multiples botones que permiten mostrar las galerias de imagenes segun la categoria-->
         <div class="subCabezal">
-          <button class="categoria">
-            ESCALERAS
-          </button>
+          <!--"ul" declara una lista que no sigue ningun orden especifico (1,2,3,...)-->
+          <ul>
+            <!--"li" declara que el elemento pertenece a una lista-->
+            <li>
+              <!--"categoria-activa" es la categoria que se muestra (se midifica con JavaScript)
+              data-categoria indica el contenido de la misma-->
+              <button class="categoria activa" data-categoria="todos">
+                TODOS
+              </button>
+            </li>
+            <li>
+              <button class="categoria" data-categoria="escaleras">
+                ESCALERAS
+              </button>
+            </li>
+            <li>
+              <button class="categoria" data-categoria="portones">
+                PORTONES
+              </button>
+            </li>
+            <li>
+              <button class="categoria" data-categoria="techos">
+                TECHOS
+              </button>
+            </li>
+            <li>
+              <button class="categoria" data-categoria="chimeneas">
+                CHIMENEAS
+              </button>
+            </li>
+          </ul>
         </div>
-        <div class="subCabezal">
-          <button class="categoria">
-            PORTONES
-          </button>
-        </div>
-        <div class="subCabezal">
-          <button class="categoria">
-            TECHOS
-          </button>
-        </div>
-        <div class="subCabezal">
-          <button class="categoria">
-            CHIMENEAS
-          </button>
-        </div>
-        <div class="galeriaProyAnts">
-        <!-- aca van las img de proyectos anteriores, la idea es que vayan cambiando segun el sub cabezal que este seleccionado -->
+        <div class="galeria-proyectos-anteriores">
+        <!-- contenedor vacio ya que se encarga JavaScript -->
         </div>
       </div>
     </section>
     <section id="contact">
     <!-- aca va la informacion de contacto -->
+      <div class="informacion-contacto">
+        <h2>contactenos</h2>
+        <a class="cont" href="#"> 000 000 000 </a>
+        <a class="mail" href="#"> JhonDoe@mail.com </a>
+        <a class="ig" href="#"> jhonDoeIG </a>
+      </div>
     </section>
   </main>
   <!--pie de pagina-->
   <footer>
     <p>© Herrería XXXXX</p>
+    <p>Montevideo, Uruguay</p>
   </footer>
 </body>
 </html>
