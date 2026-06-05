@@ -1,26 +1,40 @@
+<!--declaracion de tipo de documento-->
 <!DOCTYPE html>
+<!--declara el lenguaje en el que esta hecha la pagina-->
 <html lang="es">
+<!--"cerebro" de la pagina-->
 <head>
+  <!--los meta datos explican a los navegadores distinta informacion de la pagina-->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Herrería XXXXX |  Herrería para Hogares y Empresas</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="../imgFolder/green-background.png">
   <meta name="description" content="fabricacion e instalacion de portones techos escaleras y otras estructuras metalicas">
-</head>
+  <!--titulo mostrado por google-->
+  <title>Herrería XXXXX |  Herrería para Hogares y Empresas</title>
+  <!--vinculos tanto para el icono del buscador como a los archivos que ayudan a organizar la pagina-->
+  <link rel="icon" href="../imgFolder/green-background.png">
+  <link rel="stylesheet" href="style.css">
+</head> <!--los "/..." indican que finalizo un declaracion -->
+<!--"cuerpo" de la pagina-->
 <body>
+  <!--cabeza de pagina-->
   <header>
+    <!--"nav" indica zonas para navegar en la pagina-->
     <nav>
+      <!--"a" indica un hipervinculo de algun tipo y "href indica su direccion"-->
       <a href="#inicio">inicio</a>
       <a href="#sobNos">sobre nosotros</a>
       <a href="#proyAnt">proyectos anteriores</a>
       <a href="#contact">contactenos</a>
     </nav>
   </header>
+  <!--parte principal de la pagina-->
   <main>
+    <!--tanto section como div ayudan a organizar la pagina (pero tienen distinto valor semantico) "id" y "class" ayudan a identificar etiquetas (o grupos de etiquetas)-->
     <section id="inicio">
       <div class="titulo">
+        <!--"h1" se utiliza UNA sola vez por pagina y es el titulo principal-->
         <h1>HERRERÍA XXXXX</h1>
+        <!--"p" indica un parrafo-->
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus magni aperiam nesciunt laborum soluta totam quasi praesentium modi eum facilis, numquam natus in illum rerum delectus nihil maxime quia fugit.</p>
         <a href="#contact">
             Pedir presupuesto
@@ -29,9 +43,11 @@
     </section>
     <section id="sobNos">
       <div class="fotoPerfil">
+        <!--"img" nos permite agregar un archivo de tipo imagen "src" indica su direccion y "alt" es un texto alternativo en que de que no se cargue la imagen-->
         <img src="../imgFolder/green-background.png" alt="foto perfil de nosotros">
       </div>
       <div class="contenidoSobNos">
+        <!--titulo de tipo 2, se puede usar multiples veces, sirve para organizar el contenido-->
         <h2>Sobre Nosotros</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ad repellat quae nihil nisi laborum rerum delectus eaque reiciendis, quia ullam laudantium perferendis pariatur voluptates at odio amet incidunt. Vero!</p>
       </div>
@@ -41,6 +57,7 @@
         <div class="cabezal">
           <h2>Proyectos anteriores</h2>
         </div>
+        <!-- la clase subCabezal son multiples botones que permiten mostrar las galerias de imagenes segun la categoria-->
         <div class="subCabezal">
           <button class="categoria">
             ESCALERAS
@@ -58,11 +75,11 @@
         </div>
         <div class="subCabezal">
           <button class="categoria">
-            cCHIMENEAS
+            CHIMENEAS
           </button>
         </div>
         <div class="galeriaProyAnts">
-        <!-- aca van las img de proyectos anteriores, la idea es que vayan cambiando segundo el sub cabezal que este seleccionado -->
+        <!-- aca van las img de proyectos anteriores, la idea es que vayan cambiando segun el sub cabezal que este seleccionado -->
         </div>
       </div>
     </section>
@@ -70,6 +87,7 @@
     <!-- aca va la informacion de contacto -->
     </section>
   </main>
+  <!--pie de pagina-->
   <footer>
     <p>© Herrería XXXXX</p>
   </footer>
