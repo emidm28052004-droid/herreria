@@ -1,4 +1,4 @@
-@font-face { 
+@font-face {  /*el selector @ permite declarar reglas en el css (esta indica un nuevo tipo de fuente)*/
     font-family: 'Romanica';
     src: url('../fontsFolder/Romanica.woff2') format('woff2'),
         url('../fontsFolder/Romanica.woff') format('woff');
@@ -8,58 +8,58 @@
 }
 
 
-* { /**refiere a todo el contenido**/
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+* { /*refiere a todo el contenido*/
+  margin: 0; /*declara margenes*/
+  padding: 0; /*espacio de relleno entre el contenido y el borde*/
+  box-sizing: border-box; /*cambia la forma en que los navegadores calculan el ancho y la altura total de un elemento*/
 }
 
 
-body{
-  background: linear-gradient(90deg, #0c1b33,#447ccf, #0c1b33);
-  font-family: 'Romanica', Verdana, Tahoma, sans-serif;
+body{ /*"nombre" a secas selecciona todas las declaraciones con esta etiqueta*/
+  background: linear-gradient(90deg, #0c1b33,#447ccf, #0c1b33); /*fondo (en este caso una gradiente lineal de colores)*/
+  font-family: 'Romanica', Verdana, Tahoma, sans-serif; /*selecciona el texto-fuente (si una falla se usa la siguiente)*/
   padding-bottom: 60px;
-  font-weight: 400;
+  font-weight: 400; /*tamaño de fuente*/
 }
 
 
 header{
-  position: sticky;
-  top: 0;
-  width: 100%;
-  padding: 10px 0;
-  background-color: #232b45;
-  z-index: 1000;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  position: sticky; /*fija la posicion de un objeto en un lugar especifico*/
+  top: 0; /*declara la pocision anterior*/
+  width: 100%; /*ancho*/
+  padding: 1rem 0; /*la unidad Root EM (rem) es una unidad relativa importante en el responsive design*/
+  background-color: #232b45; /*color de fondo*/
+  z-index: 1000;/*pocisiona elementos en funcion del eje z (que esta delante y que detras)*/
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2); /*aplica sombra a una caja (en este caso el header)*/
 }
-.navegador{
-  font-size: clamp(1rem, 2vw, 1.5rem); 
-  display: flex;
+.navegador{ /*el selector . seleccion todas las clases con ese nombre*/
+  font-size: clamp(1.5em, 3vh, 2rem); /*font-size define el tamaño del texto y clamp define un valor dinamico*/
+  display: flex; /*ordena los elementos dentro de un contenedor*/
   align-items: center;   /*centra verticalmente*/
   justify-content: center; /*centra horizontalmente*/
-  font-style: oblique;
+  font-style: oblique; /*cursiva (de word)*/
 }
-header nav a{
-  margin: 0 2vw;
-  text-decoration: none;
-  color: rgb(230, 230, 230);
+header nav a{ /*al seleccionar multiples etiquetas se indica la herencia (en este caso solo se selecciona los a dentro del div en el header)*/
+  margin: 0 2vw; /*viewport widht (vw) es una medida que representa el 1% de la pantalla del navegador*/
+  text-decoration: none; /*elimina decorados en el texto (como el subrayado)*/
+  color: rgb(230, 230, 230); /*color de texto*/
 }
-header nav a:hover{
+header nav a:hover{ /*:hover activa una animacion al pasar el mouse por encima del elemento*/
   color: #ffffff;
-  text-shadow: 0 0 2px #dddddd;
+  text-shadow: 0 0 2px #dddddd; /*sombra de texto*/
 }
 
 
 .hero{
-  background-image: url("../imgFolder/green-background.png");
-  background-size: cover;
-  background-position: center;
-  min-height: calc(100vh - 60px);
+  background-image: url("../imgFolder/green-background.png"); /*coloca una imagen en el fondo (no requiere alt)*/
+  background-size: cover; /*escala una imagen para que cubra todo su contenedor*/
+  background-position: center; /*centra el fondo*/
+  min-height: calc(100vh - 60px); /*declara altura minima, calc permite operar con distintas unidades*/
   display: flex;
-  flex-direction: column;
-  text-align: center;
+  flex-direction: column; /*apila los elmentos uno debajo del otro*/
+  text-align: center; /*centra el texto*/
   justify-content: center;
-  text-shadow: 0 0 4px rgba(0,0,0,0.4);
+  text-shadow: 0 0 4px rgba(0,0,0,0.4); /*pixeles (px) son una unidad fija*/
   box-shadow: 0 0 15px #226;
 }
 .hero h1{
@@ -73,22 +73,22 @@ header nav a:hover{
   margin-bottom: 10vh;
 }
 .boton-presupuesto{
-  display: inline-block;
-  width: fit-content;
+  display: inline-block; /*conserva las capacidades estrucutrales de un bloque pero permite que los elemntos se comporten como un elemento en linea*/
+  width: fit-content; /*el ancho se ajusta al contenido*/
   padding: 0 1rem;
   margin: 2rem auto;
   text-decoration: none;
   font-size: clamp(1.5rem, 4vh, 2.5rem);
   color: rgb(12, 13, 14);
-  border:  0.3vh solid #559;
-  background: radial-gradient(#99a, #aac, #99a);
+  border:  0.3vh solid #559;/*definde el grosor estilo y color del borde*/
+  background: radial-gradient(#99a, #aac, #99a); /*gradiente circular*/
   box-shadow: 0 0 15px #337;
-  border-radius: 20px;
-  text-transform:uppercase;
-  transition: all .3s ease;
+  border-radius: 20px; /*redondea los angulos del borde*/
+  text-transform:uppercase; /*convierte el texto a mayusculas*/
+  transition: all .3s ease; /*define el tiempo que dura la transicion*/
 }
 .boton-presupuesto:hover {
-  transform: scale(1.05);
+  transform: scale(1.05); /*escala el elemento*/
   box-shadow: 0 0 20px #559;
 }
 
@@ -97,21 +97,20 @@ header nav a:hover{
 }
 .transicion img{
   width: 100%;
-  height: 25rem;
+  height: 25rem; /*altura*/
   object-fit: cover;
 }
 
-#sobre-nosotros{
+#sobre-nosotros{ /*el selector # refiere al id especifico*/
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
   border: 1px solid #232b45;
-
   padding: 6rem 1rem;
   background-color: #99c5;
   box-shadow: 0 0 15px #226;
-  gap: 2rem;
+  gap: 2rem; /*define la separacion entre los elementos hijos de un contenedor*/
 }
 #sobre-nosotros h2{
   font-size: clamp(2rem, 4.5vh, 3rem);
@@ -133,7 +132,7 @@ header nav a:hover{
 
 
 footer{
-  position: fixed;
+  position: fixed; /*fija un elemento a una pocision absoluta en la pantalla abajo se declara dicha pocision*/
   bottom: 0;
   left: 0;
   width: 100%;
@@ -148,6 +147,5 @@ footer{
 footer p{
   padding: 0 2vw;
   color: rgb(230, 230, 230);
-  /**text-shadow: 0 1px 2px #dddddd;**/
 }
 
