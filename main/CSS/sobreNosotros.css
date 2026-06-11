@@ -1,0 +1,27 @@
+#sobre-nosotros{ /*el selector # refiere al id especifico*/
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  border: 1px solid #232b45;
+  padding: 6rem 1rem;
+  background-color: var(--Bg-Secondary);
+  box-shadow: 0 0 15px #226;
+  gap: 2rem; /*define la separacion entre los elementos hijos de un contenedor*/
+}
+#sobre-nosotros h2{
+  font-size: clamp(2rem, 4.5vh, 3rem);
+}
+.foto-perfil{
+  margin: 2rem;
+}
+.foto-perfil img{
+  height: 15rem;
+  width: 15rem;
+  border-radius: 45%;
+  box-shadow: 0 0 15px #333;
+}
+.contenido-sobre-nosotros{
+  font-size: clamp(1rem, 3vh, 2.5rem);
+  max-width: 800px;
+}

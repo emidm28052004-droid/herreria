@@ -1,0 +1,41 @@
+.hero{
+  background-image: url("../../imgFolder/green-background.png"); /*coloca una imagen en el fondo (no requiere alt)*/
+  background-size: cover; /*escala una imagen para que cubra todo su contenedor*/
+  background-position: center; /*centra el fondo*/
+  min-height: calc(100vh - 60px); /*declara altura minima, calc permite operar con distintas unidades*/
+  display: flex;
+  flex-direction: column; /*apila los elmentos uno debajo del otro*/
+  text-align: center; /*centra el texto*/
+  justify-content: center;
+  text-shadow: 0 0 4px rgba(0,0,0,0.4); /*pixeles (px) son una unidad fija*/
+  box-shadow: 0 0 15px #226;
+}
+.hero h1{
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  color: black;
+  margin-bottom: 10vh;
+}
+.hero h2{
+  font-size: clamp(1.5rem, 3vh, 3rem);
+  padding: 0 2vw;
+  margin-bottom: 10vh;
+}
+.boton-presupuesto{
+  display: inline-block; /*conserva las capacidades estrucutrales de un bloque pero permite que los elemntos se comporten como un elemento en linea*/
+  width: fit-content; /*el ancho se ajusta al contenido*/
+  padding: 0 1rem;
+  margin: 2rem auto;
+  text-decoration: none;
+  font-size: clamp(1.5rem, 4vh, 2.5rem);
+  color: rgb(12, 13, 14);
+  border:  0.3vh solid #559;/*definde el grosor estilo y color del borde*/
+  background: radial-gradient(#99a, #aac, #99a); /*gradiente circular*/
+  box-shadow: 0 0 15px #337;
+  border-radius: 20px; /*redondea los angulos del borde*/
+  text-transform:uppercase; /*convierte el texto a mayusculas*/
+  transition: all .3s ease; /*define el tiempo que dura la transicion*/
+}
+.boton-presupuesto:hover {
+  transform: scale(1.05); /*escala el elemento*/
+  box-shadow: 0 0 20px #559;
+}

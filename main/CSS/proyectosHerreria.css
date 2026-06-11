@@ -1,0 +1,46 @@
+#proyectos-herreria{
+  border: 1px solid #232b45;
+  box-shadow: 0 0 15px #226;
+  gap: 2rem;
+}
+
+#proyectos-herreria .organizador {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+#proyectos-herreria .organizador .menu{
+  padding: 6rem 1rem;
+  background-color: var(--Bg-Tertiary);
+}
+
+#proyectos-herreria .organizador .menu h2{
+  font-size: clamp(2rem, 4.5vh, 3rem);
+  text-transform: capitalize;
+}
+
+
+#proyectos-herreria .organizador .menu .sub-cabezal ul{
+  padding: 1rem 2rem;
+  list-style: none;
+}
+
+#proyectos-herreria .organizador .menu .sub-cabezal ul li{
+  margin: 3rem;
+}
+
+#proyectos-herreria .organizador .menu .sub-cabezal ul li .categoria-activa{
+  width: 10rem;
+  height: 3rem;
+}
+
+#proyectos-herreria .organizador .menu .sub-cabezal ul li .categoria{
+  width: 8rem;
+  height: 3rem;
+}
+
+#proyectos-herreria .organizador .galeria-proyectos{
+  padding: 20rem 20vw;
+  border-left: 3px solid #232b45;
+}
