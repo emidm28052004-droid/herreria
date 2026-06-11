@@ -1,0 +1,33 @@
+header{
+  position: sticky; /*fija la posicion de un objeto en un lugar especifico*/
+  top: 0; /*declara la pocision anterior*/
+  width: 100%; /*ancho*/
+  padding: 1rem 0; /*la unidad Root EM (rem) es una unidad relativa importante en el responsive design*/
+  background-color: #232b45; /*color de fondo*/
+  display: flex; /*ordena los elementos dentro de un contenedor*/
+  align-items: center;   /*centra verticalmente*/
+  justify-content: space-between; /*centra horizontalmente*/
+  z-index: 1000;/*pocisiona elementos en funcion del eje z (que esta delante y que detras)*/
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2); /*aplica sombra a una caja (en este caso el header)*/
+}
+header img{
+  height: 3.5rem;
+  width: 3.5rem;
+  display: block;
+  margin-left: 2rem;
+}
+.navegador{ /*el selector . seleccion todas las clases con ese nombre*/
+  font-size: clamp(1.5em, 3vh, 2rem); /*font-size define el tamaño del texto y clamp define un valor dinamico*/
+  font-style: oblique; /*cursiva (de word)*/
+  display: flex;
+  justify-items: center;
+}
+header nav a{ /*al seleccionar multiples etiquetas se indica la herencia (en este caso solo se selecciona los a dentro del div en el header)*/
+  margin: 0 2vw; /*viewport widht (vw) es una medida que representa el 1% de la pantalla del navegador*/
+  text-decoration: none; /*elimina decorados en el texto (como el subrayado)*/
+  color: rgb(230, 230, 230); /*color de texto*/
+}
+header nav a:hover{ /*:hover activa una animacion al pasar el mouse por encima del elemento*/
+  color: #ffffff;
+  text-shadow: 0 0 2px #dddddd; /*sombra de texto*/
+}

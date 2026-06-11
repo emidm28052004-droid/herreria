@@ -7,15 +7,12 @@ html[data-theme="light"] {
 
   /*--Primary: grey;
   --Primary-Hover: rgb(60, 60, 60);
-  --Primary-Active: black;
+  --Primary-Active: black;*/
 
   --FontColor-Primary: black;
-  --FontColor-Hover: white;
+  --FontColor-Hover: grey;
   --FontColor-Active: white;
   --FontColor-Title: white;
-  --FontColor-Derechos: white;
-  --FontColor-Menu-hover: grey;
-  --FontColor-All: black;*/
 }
 
 html {
