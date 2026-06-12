@@ -1,26 +1,36 @@
 .hero{
-  background-image: url("../../imgFolder/green-background.png"); /*coloca una imagen en el fondo (no requiere alt)*/
-  background-size: cover; /*escala una imagen para que cubra todo su contenedor*/
+  min-height: 100vh;
+  background-image:
+    linear-gradient(
+        rgba(0,0,0,.5),
+        rgba(0,0,0,.5)
+    ),
+      url("../../imgFolder/hero.webp"); /*coloca una imagen en el fondo (no requiere alt)*/
+  background-size: contain; /*escala una imagen para que cubra todo su contenedor*/
   background-position: center; /*centra el fondo*/
+  background-repeat: no-repeat;
   min-height: calc(100vh - 60px); /*declara altura minima, calc permite operar con distintas unidades*/
   display: flex;
   flex-direction: column; /*apila los elmentos uno debajo del otro*/
   text-align: center; /*centra el texto*/
   justify-content: center;
-  text-shadow: 0 0 4px rgba(0,0,0,0.4); /*pixeles (px) son una unidad fija*/
+  text-shadow: 0 0 4px rgba(200,200,200,0.5); /*pixeles (px) son una unidad fija*/
   box-shadow: 0 0 15px #226;
+  color: var(--FontColor-Title);
 }
+
 .hero h1{
   font-size: clamp(2.5rem, 5vw, 4rem);
-  color: black;
   margin-bottom: 10vh;
 }
+
 .hero h2{
   font-size: clamp(1.5rem, 3vh, 3rem);
   padding: 0 2vw;
   margin-bottom: 10vh;
 }
-.boton-presupuesto{
+
+.hero .boton-presupuesto{
   display: inline-block; /*conserva las capacidades estrucutrales de un bloque pero permite que los elemntos se comporten como un elemento en linea*/
   width: fit-content; /*el ancho se ajusta al contenido*/
   padding: 0 1rem;
@@ -35,6 +45,7 @@
   text-transform:uppercase; /*convierte el texto a mayusculas*/
   transition: all .3s ease; /*define el tiempo que dura la transicion*/
 }
+
 .boton-presupuesto:hover {
   transform: scale(1.05); /*escala el elemento*/
   box-shadow: 0 0 20px #559;
