@@ -1,5 +1,4 @@
 .hero{
-  min-height: calc(100vh - 60px);
   display: flex; /*apila los elmentos uno debajo del otro*/
   background-color: var();
   text-align: center;
@@ -11,7 +10,7 @@
 
 .hero .text{
   min-height: 100vh; 
-  padding: 0 10rem;
+  padding: 0 8rem;
   border-right: 3px solid black;
   align-content: center;
   background: linear-gradient(140deg,rgba(168, 81, 23, 0.801),rgba(170, 112, 151, 0.418));

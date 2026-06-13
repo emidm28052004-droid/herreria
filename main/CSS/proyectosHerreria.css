@@ -1,17 +1,15 @@
 #proyectos-herreria{
+  display: flex;
+  flex-wrap: wrap;
   border: 1px solid #232b45;
   box-shadow: 0 0 15px #226;
   background-color: var(--Bg-Tertiary);
   gap: 2rem;
 }
 
-#proyectos-herreria .organizador {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 #proyectos-herreria .menu{
-  padding: 6rem 1rem;
+  align-self: center;
+  padding: 0 1rem;
   flex: 0 0 300px;
   display: flex;
   flex-direction: column;
@@ -35,8 +33,6 @@
   margin-bottom: 3rem;
 }
 
-
-
 #proyectos-herreria .categoria{
   width: 8rem;
   height: 3rem;
@@ -57,8 +53,10 @@
 
 #proyectos-herreria .galeria-proyectos{
   background-color: #fffb;
+  margin: 3rem 0;
   flex: 1;
-  border-left: 3px solid #232b45;
+  border: 3px solid #232b45;
+  border-right: none;
   border-radius: 40px 0 0 40px;
   box-shadow: -5px 0 10px #7668;
 }

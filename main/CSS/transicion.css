@@ -1,0 +1,24 @@
+.transicion1{
+  height: 30rem;
+
+  background-image: url(../../imgFolder/Trancision/transicion1.webp);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.transicion2{
+  height: 30rem;
+
+  background-image: url(../../imgFolder/Trancision/transicion2.webp);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.transicion3{
+  height: 30rem;
+
+  background-image: url(../../imgFolder/Trancision/transicion3.webp);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}

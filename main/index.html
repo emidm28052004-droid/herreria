@@ -13,6 +13,7 @@
   <!--vinculos tanto para los iconos como para los archivos que ayudan a organizar la pagina-->
   <link rel="icon" href="../imgFolder/marca/favicon.ico">
 
+  <link rel="stylesheet" href="CSS/transicion.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="CSS/root.css" />
   <link rel="stylesheet" href="CSS/style.css">
@@ -21,8 +22,6 @@
   <link rel="stylesheet" href="CSS/sobreNosotros.css">
   <link rel="stylesheet" href="CSS/proyectosHerreria.css">
   <link rel="stylesheet" href="CSS/footer.css">
-
-  <script src="../main/JS/trancisicion.js" defer></script>
 
 </head> <!--los "/..." indican que finalizo un declaracion -->
 <!--"cuerpo" de la pagina-->
@@ -56,12 +55,10 @@
         </a>
       </div>
       <div class="hero-img">
-        <img src="../imgFolder/hero.webp" alt="img hero">
+        <img src="../imgFolder/hero.webp" alt="img hero" fetchpriority="high">
       </div>
     </section>
-    <div class="transicion">
-      <img src="../imgFolder/Trancision/trancision2.webp" alt="imagen de transición 1"> <!--estas imagenes serviran como separadores entre seccion y seccion y se dezplazaran sobre el eje y al scrolear (sera programado con JS)-->
-    </div>
+    <div class="transicion1"> </div> <!--estas trancisiones contendran imagenes serviran como separadores entre seccion y seccion y se dezplazaran sobre el eje y al scrolear (sera programado con JS)-->
     <section id="sobre-nosotros">
       <h2>Sobre Nosotros</h2>
       <div class="foto-perfil">
@@ -72,58 +69,52 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ad repellat quae nihil nisi laborum rerum delectus eaque reiciendis, quia ullam laudantium perferendis pariatur voluptates at odio amet incidunt. Vero!</p>
       </div>
     </section>
-    <div class="transicion">
-      <img src="../imgFolder/green-background.png" alt="imagen de transición 2">
-    </div>
+    <div class="transicion2"></div>
     <section id="proyectos-herreria">
-      <div class="organizador">
-        <div class="menu">
-          <div>
-            <h2>Proyectos herrería</h2>
-          </div>
-          <!--la clase subCabezal son multiples botones que permiten mostrar las galerias de imagenes segun la categoria-->
-          <div class="sub-cabezal">
-            <!--"ul" declara una lista que no sigue ningun orden especifico (1,2,3,...)-->
-            <ul>
-              <!--"li" declara que el elemento pertenece a una lista-->
-              <li>
-                <!--"categoria-activa" es la categoria que se muestra (se modifica con JavaScript)
-                data-categoria indica el contenido de la misma-->
-                <button class="categoria-activa" data-categoria="todos">
-                  TODOS
-                </button>
-              </li>
-              <li>
-                <button class="categoria" data-categoria="escaleras">
-                  ESCALERAS
-                </button>
-              </li>
-              <li>
-                <button class="categoria" data-categoria="portones">
-                  PORTONES
-                </button>
-              </li>
-              <li>
-                <button class="categoria" data-categoria="techos">
-                  TECHOS
-                </button>
-              </li>
-              <li>
-                <button class="categoria" data-categoria="decoraciones">
-                  DECORACIONES
-                </button>
-              </li>
-            </ul>
-          </div>
+      <div class="menu">
+        <div>
+          <h2>Proyectos herrería</h2>
         </div>
-        <div class="galeria-proyectos">
-        <!--contenedor vacio, se encarga JavaScript-->
+        <!--la clase subCabezal son multiples botones que permiten mostrar las galerias de imagenes segun la categoria-->
+        <div class="sub-cabezal">
+          <!--"ul" declara una lista que no sigue ningun orden especifico (1,2,3,...)-->
+          <ul>
+            <!--"li" declara que el elemento pertenece a una lista-->
+            <li>
+              <!--"categoria-activa" es la categoria que se muestra (se modifica con JavaScript)
+              data-categoria indica el contenido de la misma-->
+              <button class="categoria-activa" data-categoria="todos">
+                TODOS
+              </button>
+            </li>
+            <li>
+              <button class="categoria" data-categoria="escaleras">
+                ESCALERAS
+              </button>
+            </li>
+            <li>
+              <button class="categoria" data-categoria="portones">
+                PORTONES
+              </button>
+            </li>
+            <li>
+              <button class="categoria" data-categoria="techos">
+                TECHOS
+              </button>
+            </li>
+            <li>
+              <button class="categoria" data-categoria="decoraciones">
+                DECORACIONES
+              </button>
+            </li>
+          </ul>
         </div>
       </div>
+      <div class="galeria-proyectos">
+      <!--contenedor vacio, se encarga JavaScript-->
+      </div>
     </section>
-    <div class="transicion">
-      <img src="../imgFolder/green-background.png" alt="imagen de transición 3">
-    </div>
+    <div class="transicion3"></div>
     <section id="otros-servicios">
       <div>
         <h2>otros-servicios</h2>
@@ -142,9 +133,9 @@
         <i class="fa-brands fa-whatsapp"></i>
         000 000 000 
       </a>
-      <a class="ig" href="#"> 
+      <a class="ig" href="https://www.instagram.com/gabisol_2026?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer"> 
         <i class="fa-brands fa-instagram"></i>
-        jhonDoeIG 
+        HerreriaG&S
       </a>
       <a class="f" href="#"> 
         <i class="fa-brands fa-facebook"></i>

@@ -12,19 +12,6 @@ body{ /*"nombre" a secas selecciona todas las declaraciones con esta etiqueta*/
 }
 
 section{
-  scroll-margin-top: 80px;
-}
-
-.transicion{
-  overflow:hidden;
-  position:relative;
-  border:5px solid red;
-}
-
-.transicion img{
-  width:100%;
-  height:30rem;
-  object-fit:cover;
-  transform-origin: center;
-  transform: scale(1.3);
+  scroll-margin-top: 75px;
+  min-height: calc(100vh - 60px);
 }

@@ -5,7 +5,7 @@
   align-items: center;
   border: 1px solid #232b45;
   padding: 6rem 1rem;
-  background-color: var(--Bg-Secondary);
+  background-color: var(--Bg-Main);
   box-shadow: 0 0 15px #226;
   gap: 2rem; /*define la separacion entre los elementos hijos de un contenedor*/
 }
