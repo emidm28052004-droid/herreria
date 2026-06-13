@@ -16,13 +16,15 @@ section{
 }
 
 .transicion{
-  margin: 5rem 0;
+  overflow:hidden;
+  position:relative;
+  border:5px solid red;
 }
+
 .transicion img{
-  width: 100%;
-  height: 25rem; /*altura*/
-  object-fit: cover;
+  width:100%;
+  height:30rem;
+  object-fit:cover;
+  transform-origin: center;
+  transform: scale(1.3);
 }
-
-
-
