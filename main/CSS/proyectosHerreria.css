@@ -59,11 +59,22 @@
 }
 
 #proyectos-herreria .galeria-proyectos{
-  background-color: #fffb;
+  background: radial-gradient(#fffa, #ffb7);
   margin: 3rem 0;
   flex: 1;
   border: 3px solid #232b45;
   border-right: none;
   border-radius: 40px 0 0 40px;
   box-shadow: -5px 0 10px #7668;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+}
+.galeria-proyectos div{
+  
+  border-radius: 20px;
+  box-shadow: 0 0 10px black;
 }
