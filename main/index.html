@@ -13,8 +13,8 @@
   <!--vinculos tanto para los iconos como para los archivos que ayudan a organizar la pagina-->
   <link rel="icon" href="../imgFolder/marca/favicon.ico">
 
+  <link rel="stylesheet" href="CSS/otrosServicios.css">
   <link rel="stylesheet" href="CSS/transicion.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="CSS/root.css" />
   <link rel="stylesheet" href="CSS/style.css">
   <link rel="stylesheet" href="CSS/header.css">
@@ -23,6 +23,9 @@
   <link rel="stylesheet" href="CSS/proyectosHerreria.css">
   <link rel="stylesheet" href="CSS/footer.css">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!--script llama a un archivo js, defer lo ejecuta desde el segundo 1-->
   <script src="JS/galeria.js" defer></script>
 </head> <!--los "/..." indican que finalizo un declaracion -->
 <!--"cuerpo" de la pagina-->
@@ -56,10 +59,13 @@
         </a>
       </div>
       <div class="hero-img">
+        <!--img declara una imagen-->
         <img src="../imgFolder/hero.webp" alt="img hero" fetchpriority="high">
       </div>
     </section>
-    <div class="transicion1"> </div> <!--estas trancisiones contendran imagenes serviran como separadores entre seccion y seccion y se dezplazaran sobre el eje y al scrolear (sera programado con JS)-->
+    <div class="transicion transicion1"> 
+      <div></div> <!--aplica una ligera gradiente sobre la imagen-->
+    </div> <!--estas trancisiones contienen imagenes sirven como separadores entre seccion y seccion)-->
     <section id="sobre-nosotros">
       <h2>Sobre Nosotros</h2>
       <div class="foto-perfil">
@@ -70,7 +76,9 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ad repellat quae nihil nisi laborum rerum delectus eaque reiciendis, quia ullam laudantium perferendis pariatur voluptates at odio amet incidunt. Vero!</p>
       </div>
     </section>
-    <div class="transicion2"></div>
+    <div class="transicion transicion2">
+      <div></div> <!--aplica una ligera gradiente sobre la imagen-->
+    </div>
     <section id="proyectos-herreria">
       <div class="menu">
         <div>
@@ -82,7 +90,7 @@
           <ul>
             <!--"li" declara que el elemento pertenece a una lista-->
             <li>
-              <!--"categoria-activa" es la categoria que se muestra (se modifica con JavaScript)
+              <!--"categoria-activa" es la categoria que se muestra (gracias a JavaScript)
               data-categoria indica el contenido de la misma-->
               <button class="categoria categoria-activa" data-categoria="todos">
                 TODOS
@@ -125,10 +133,17 @@
           <div class="imagen img6"></div>
       </div>
     </section>
-    <div class="transicion3"></div>
+    <div class="transicion transicion3">
+      <div></div> <!--aplica una ligera gradiente sobre la imagen-->
+    </div>
     <section id="otros-servicios">
-      <div>
-        <h2>otros-servicios</h2>
+      <div class="menu">
+        <h2>Otros servicios</h2>
+        <h3>Pequeñas reparaciones y soluciones para el hogar</h3>
+        <p>¿Tareas pendientes en el hogar?
+          ¿Reparaciones menores?
+          En G&S estamos encantados de asistir en todas estas necesidasdes que no justifican contratar alguien especializado
+        </p>
       </div>
     </section>
   </main>

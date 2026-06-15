@@ -8,6 +8,5 @@ html[data-theme="light"] {
   --Buton-Secondary: #e9dbdb;
 
   --FontColor-Primary: black;
-  --FontColor-header-footer: white;
-  --FontColor-Title: white;
+  --FontColor-Important: rgba(230,230,230,0.9);
 }

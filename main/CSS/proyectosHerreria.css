@@ -63,7 +63,7 @@
 
 #proyectos-herreria button:active {
   transform: scale(1.15); /*escala el elemento*/
-  box-shadow: inset 0 0 15px black;
+  box-shadow: inset 0 0 10px black;
   border: 3px solid black;
 }
 

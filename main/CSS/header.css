@@ -25,7 +25,7 @@ header img{
 header nav a{ /*al seleccionar multiples etiquetas se indica la herencia (en este caso solo se selecciona los a dentro del div en el header)*/
   margin: 0 2vw; /*viewport widht (vw) es una medida que representa el 1% de la pantalla del navegador*/
   text-decoration: none; /*elimina decorados en el texto (como el subrayado)*/
-  color: rgb(230, 230, 230); /*color de texto*/
+  color: var(--FontColor-Important); /*color de texto*/
 }
 header nav a:hover{ /*:hover activa una animacion al pasar el mouse por encima del elemento*/
   color: #ffffff;

@@ -1,0 +1,22 @@
+#otros-servicios{
+  border-top:  3px solid black;
+}
+
+#otros-servicios .menu{
+  padding: 2rem;
+  color: var(--FontColor-Primary);
+  background: linear-gradient(var(--Bg-Secondary), rgba(50, 50, 50, 0.1));
+  text-shadow: 0 0 2px white;
+}
+
+#otros-servicios h2{
+  font-size: clamp(3rem, 5vh, 5rem);
+}
+#otros-servicios h3{
+  margin-top: 0.5rem;
+  font-size: clamp(2rem, 3vh, 3rem);
+}
+#otros-servicios p{
+  margin-top: 1rem;
+  font-size: clamp(1rem, 2.5vh, 2rem);
+}

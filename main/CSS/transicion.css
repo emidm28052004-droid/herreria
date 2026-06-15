@@ -1,27 +1,27 @@
-.transicion1{
-  height: 30rem;
 
+.transicion1{
   background-image: url(../../imgFolder/Trancision/transicion1.webp);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  z-index: 0;
 }
 .transicion2{
-  height: 30rem;
-
   background-image: url(../../imgFolder/Trancision/transicion2.webp);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  z-index: 0;
 }
 .transicion3{
+  background-image: url(../../imgFolder/Trancision/transicion3.webp);
+}
+
+.transicion{
   height: 30rem;
 
-  background-image: url(../../imgFolder/Trancision/transicion3.webp);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+
   z-index: 0;
+}
+
+.transicion div{
+  width: 100%;
+  height: 100%;
+
+  background: radial-gradient(#b554, #5394);
 }
