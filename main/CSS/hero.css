@@ -13,7 +13,7 @@
   border-right: 3px solid black;
   align-content: center;
   background: linear-gradient(140deg,rgba(168, 81, 23, 0.801),rgba(170, 112, 151, 0.418));
-  text-shadow: 1px 0 10px rgba(0, 0, 0, 1);
+  text-shadow: 1px 0 10px rgba(100, 100, 100, 1);
 }
 .hero h1{
   font-size: clamp(3rem, 5vw, 5rem);
