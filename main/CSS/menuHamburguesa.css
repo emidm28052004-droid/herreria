@@ -35,7 +35,7 @@
   position: absolute;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1000px) {
   #icon_menu_border {
     display: none;
   }

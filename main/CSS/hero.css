@@ -3,7 +3,7 @@
   background-color: var();
   text-align: center;
   border-bottom:  3px solid black;
-  color: var(--FontColor-Title);
+  color: var(--FontColor-Primary);
   background-color: var(--Bg-Cuaternary);
 }
 
@@ -58,4 +58,27 @@
 .hero-img img{
   max-width: 100%;
   max-height: 100vh;
+}
+
+@media(max-width:1023px){
+  .hero-img{
+    display:none;
+  }
+  .hero-img img{
+    display: none;
+  }
+  .hero{
+    background-image: url(../../imgFolder/hero.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .hero .text{
+    width: 100%;
+    border: none;
+    background: rgba(40, 40, 40, 0.4);
+    color:  var(--FontColor-Important);
+    padding: 0;
+    text-shadow: 1px 0 10px rgba(0, 0, 0, 1);
+  }
 }

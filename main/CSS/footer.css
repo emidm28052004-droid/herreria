@@ -50,3 +50,32 @@
   justify-content: center;/*centra verticalmente*/
   padding: 0 2vw;
 }
+
+
+@media(max-width:1024px){
+  #contactenos .informacion-contacto{
+    padding: 0;
+    margin-left: 0;
+  }
+    #contactenos .foot{
+    display: flex;
+    align-items: center;
+  }
+    #contactenos .foot img{
+    height: 3.5rem;
+    width: 3.5rem;
+    display: block;
+    margin-left: 0 1rem;
+  }
+    #contactenos .foot p{
+    display: flex;
+    justify-content: center;/*centra verticalmente*/
+    margin: 0 1rem;
+  }
+}
+@media(max-width:500px){
+  #contactenos .informacion-contacto a{
+    margin-left: 8rem;
+    margin-top: 1rem;
+  }
+}
