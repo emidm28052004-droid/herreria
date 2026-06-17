@@ -13,6 +13,7 @@
   <!--vinculos tanto para los iconos como para los archivos que ayudan a organizar la pagina-->
   <link rel="icon" href="../imgFolder/marca/favicon.ico">
 
+  <link rel="stylesheet" href="CSS/menuHamburguesa.css">
   <link rel="stylesheet" href="CSS/otrosServicios.css">
   <link rel="stylesheet" href="CSS/transicion.css">
   <link rel="stylesheet" href="CSS/root.css" />
@@ -24,24 +25,37 @@
   <link rel="stylesheet" href="CSS/footer.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
+  
   <!--script llama a un archivo js, defer lo ejecuta desde el segundo 1-->
   <script src="JS/galeria.js" defer></script>
+  <script src="JS/menuHamburguesa.js" defer></script>
 </head> <!--los "/..." indican que finalizo un declaracion -->
 <!--"cuerpo" de la pagina-->
 <body>
   <!--cabeza de pagina-->
   <header>
-    <!--"img" nos permite agregar un archivo de tipo imagen "src" indica su direccion y "alt" es un texto alternativo en caso de que no se cargue la imagen-->
-    <img src="../imgFolder/marca/G&S logo blanco.png" alt="logo de la empresa">
     <!--"nav" indica zonas para navegar en la pagina-->
-    <nav class="navegador">
+    <nav>
+      <!--"img" nos permite agregar un archivo de tipo imagen "src" indica su direccion y "alt" es un texto alternativo en caso de que no se cargue la imagen-->
+    <img src="../imgFolder/marca/G&S logo blanco.png" alt="logo de la empresa">
+      <ul class="navegador">
       <!--"a" indica un hipervinculo de algun tipo y "href indica su direccion"-->
-      <a href="#inicio">inicio</a>
-      <a href="#sobre-nosotros">sobre nosotros</a>
-      <a href="#proyectos-herreria">proyectos herreria</a>
-      <a href="#otros-servicios">otros servicios</a>
-      <a href="#contactenos">contactenos</a>
+        <li><a href="#inicio">inicio</a></li>
+        <li><a href="#sobre-nosotros">sobre nosotros</a></li>
+        <li><a href="#proyectos-herreria">proyectos herreria</a></li>
+        <li><a href="#otros-servicios">otros servicios</a></li>
+        <li><a href="#contactenos">contactenos</a></li>
+      </ul>
+      <div id="icon_menu_border"></div>
+    </nav>
+    <nav class="menuOculto">
+      <ul>
+        <li><a href="#inicio">inicio</a></li>
+        <li><a href="#sobre-nosotros">sobre nosotros</a></li>
+        <li><a href="#proyectos-herreria">proyectos herreria</a></li>
+        <li><a href="#otros-servicios">otros servicios</a></li>
+        <li><a href="#contactenos">contactenos</a></li>
+      </ul>
     </nav>
   </header>
   <!--parte principal de la pagina-->
@@ -179,6 +193,7 @@
           <img src="../imgFolder/otrosServicios/otrosServicios8.webp" alt="imagen general de otros servicios" class="esp">
         </div>
       </div>
+    </section>
   </main>
   <!--pie de pagina-->
   <footer id="contactenos">

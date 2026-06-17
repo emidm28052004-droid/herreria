@@ -4,11 +4,13 @@ header{
   width: 100%; /*ancho*/
   padding: 1rem 0; /*la unidad Root EM (rem) es una unidad relativa importante en el responsive design*/
   background-color: var(--Bg-Cuaternary); /*color de fondo*/
+  z-index: 1000;/*pocisiona elementos en funcion del eje z (que esta delante y que detras)*/
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3); /*aplica sombra a una caja (en este caso el header)*/
+}
+header nav{
   display: flex; /*ordena los elementos dentro de un contenedor*/
   align-items: center;   /*centra verticalmente*/
   justify-content: space-between; /*centra horizontalmente*/
-  z-index: 1000;/*pocisiona elementos en funcion del eje z (que esta delante y que detras)*/
-  box-shadow: 0 5px 10px rgba(0,0,0,0.3); /*aplica sombra a una caja (en este caso el header)*/
 }
 header img{
   height: 3.5rem;
@@ -21,6 +23,7 @@ header img{
   font-style: oblique; /*cursiva (de word)*/
   display: flex;
   align-items: center;
+  list-style: none
 }
 header nav a{ /*al seleccionar multiples etiquetas se indica la herencia (en este caso solo se selecciona los a dentro del div en el header)*/
   margin: 0 2vw; /*viewport widht (vw) es una medida que representa el 1% de la pantalla del navegador*/
@@ -31,3 +34,27 @@ header nav a:hover{ /*:hover activa una animacion al pasar el mouse por encima d
   color: #ffffff;
   text-shadow: 0 0 2px #dddddd; /*sombra de texto*/
 }
+.menuOculto{
+  display: none;
+  margin-top: 10px;
+  padding: 10px;
+  list-style: none;
+  border-top: 3px solid var(--Bg-Main);
+}
+.menuOculto ul a{
+  display: block;
+  border-bottom: 1px solid var(--Bg-Main);
+  color: white;
+  padding: 10px;
+  position: relative;
+}
+.Mostrar{
+  display: block;
+}
+
+@media(max-width:768px){
+  .navegador{
+    display:none;
+  }
+}
+
