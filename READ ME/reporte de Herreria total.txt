@@ -504,4 +504,29 @@ NOTAS PARA MAÑANA
 
 Día 11
 
-horas trabajdas 2h...
+horas trabajdas 2h
+
+Logrado 
+-se corrigieron errores en responsive
+-se mejoro lightbox
+-se optimizaron imagenes
+-se contacto al cliente (aun no pasa el material)
+
+Pendientes técnicos:
+-Reemplazar el contenido temporal de "Sobre Nosotros".
+-Agregar fotografías a la sección "Sobre Nosotros".
+-Completar información de contacto.
+-Agregar imágenes adicionales a la galería.
+-Realizar auditoría final con Lighthouse antes de la entrega.
+
+Pendientes del cliente:
+-Brindar información para la sección "Sobre Nosotros".
+-Proporcionar fotografías adicionales para el sitio.
+-Responder sobre Google Business.
+-Responder sobre otras redes sociales.
+-Proporcionar datos faltantes de contacto.
+
+Observaciones
+-Rendimiento ordenador 100 
+-Rendimiento en movil 74, parece que el pasar todo el css a una sola carpeta lo ha empeorado?
+-Fase final, resta unicamente informacion del cliente
