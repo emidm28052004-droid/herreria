@@ -23,8 +23,11 @@
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/header.css">
     <link rel="stylesheet" href="CSS/proyectosHerreria.css">
-    <link rel="stylesheet" href="CSS/lightbox.css">
+    
+    <link rel="preload" href="CSS/lightbox.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   
+    <link rel="preload" as="image" href="../imgFolder/hero.webp">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     
     <!--script llama a un archivo js, defer lo ejecuta desde el segundo 1-->
@@ -78,9 +81,7 @@
               Pedir presupuesto
           </a>
         </div>
-        <div class="hero-img">
-          <!--img declara una imagen-->
-          <img src="../imgFolder/hero.webp" alt="Trabajo de herrería realizado por Herrería G&S" loading="eager" fetchpriority="high">
+        <div class="hero-img" fetch>
         </div>
       </section>
       <div class="transicion transicion1"> 
@@ -109,38 +110,47 @@
             <!--"ul" declara una lista que no sigue ningun orden especifico (1,2,3,...)-->
             <ul>
               <!--"li" declara que el elemento pertenece a una lista-->
-              <li>
-                <!--"categoria-activa" es la categoria que se muestra (gracias a JavaScript)
-                data-categoria indica el contenido de la misma-->
-                <button class="categoria categoria-activa" data-categoria="todos">
-                  TODOS
-                </button>
-              </li>
-              <li>
-                <button class="categoria" data-categoria="escaleras">
-                  ESCALERAS
-                </button>
-              </li>
-              <li>
-                <button class="categoria" data-categoria="puertasYportones">
-                  PUERTAS Y PORTONES
-                </button>
-              </li>
-              <li>
-                <button class="categoria" data-categoria="techos">
-                  TECHOS
-                </button>
-              </li>
-              <li>
-                <button class="categoria" data-categoria="decoraciones">
-                  DECORACIONES
-                </button>
-              </li>
-              <li>
-                <button class="categoria" data-categoria="mobiliarios">
-                  MOBILIARIO
-                </button>
-              </li>
+              <div>
+                <li>
+                  <!--"categoria-activa" es la categoria que se muestra (gracias a JavaScript)
+                  data-categoria indica el contenido de la misma-->
+                  <button class="categoria categoria-activa" data-categoria="todos">
+                    TODOS
+                  </button>
+                </li>
+              </div>
+              <div class="especifico">
+                <li>
+                  <button class="categoria" data-categoria="escaleras">
+                    ESCALERAS
+                  </button>
+                </li>
+                <li>
+                  <button class="categoria" data-categoria="puertasYportones">
+                    PUERTAS Y PORTONES
+                  </button>
+                </li>
+                <li>
+                  <button class="categoria" data-categoria="techos">
+                    TECHOS
+                  </button>
+                </li>
+                <li>
+                  <button class="categoria" data-categoria="decoraciones">
+                    DECORACIONES
+                  </button>
+                </li>
+                <li>
+                  <button class="categoria" data-categoria="mobiliarios">
+                    MOBILIARIO
+                  </button>
+                </li>
+                <li>
+                  <button class="categoria" data-categoria="ventanas">
+                    VENTANAS
+                  </button>
+                </li>
+              </div>
             </ul>
           </div>
         </div>
@@ -168,35 +178,35 @@
         <div class="servicios">
           <div>
             <h4>Cambio de focos</h4>
-            <img src="../imgFolder/otrosServicios/otrosServicios1.webp" alt="servicio de cambio defocos">
+            <img src="../imgFolder/otrosServicios/otrosServicios1.webp" alt="servicio de cambio defocos" loading="lazy">
           </div>
           <div>
             <h4>Reparacion de enchufes</h4>
-            <img src="../imgFolder/otrosServicios/otrosServicios2.webp" alt="servicio de reparacion de enchufes">
+            <img src="../imgFolder/otrosServicios/otrosServicios2.webp" alt="servicio de reparacion de enchufes" loading="lazy">
           </div>
           <div>
             <h4>Cambio de cerraduras</h4>
-            <img src="../imgFolder/otrosServicios/otrosServicios3.webp" alt="servicio de cambio de cerraduras">
+            <img src="../imgFolder/otrosServicios/otrosServicios3.webp" alt="servicio de cambio de cerraduras" loading="lazy">
           </div>
           <div>
             <h4>Colocacion de cortinas</h4>
-            <img src="../imgFolder/otrosServicios/otrosServicios4.webp" alt="servicio de colocacion de cortinas">
+            <img src="../imgFolder/otrosServicios/otrosServicios4.webp" alt="servicio de colocacion de cortinas" loading="lazy">
           </div>
           <div>
             <h4>Colgado de cuadros</h4>
-            <img src="../imgFolder/otrosServicios/otrosServicios5.webp" alt="servicio de colgado de cuadros">
+            <img src="../imgFolder/otrosServicios/otrosServicios5.webp" alt="servicio de colgado de cuadros" loading="lazy">
           </div>
           <div>
             <h4>Armado de muebles</h4>
-            <img src="../imgFolder/otrosServicios/otrosServicios6.webp" alt="servicio de armado de muebles">
+            <img src="../imgFolder/otrosServicios/otrosServicios6.webp" alt="servicio de armado de muebles" loading="lazy">
           </div>
           <div>
             <h4>Reparacion de perdidas menores</h4>
-            <img src="../imgFolder/otrosServicios/otrosServicios7.webp" alt="servicio de reparacion de perdidas de agua menores" class="esp">
+            <img src="../imgFolder/otrosServicios/otrosServicios7.webp" alt="servicio de reparacion de perdidas de agua menores" class="esp" loading="lazy">
           </div>
           <div>
             <h4>Ajustes y matenimiento general</h4>
-            <img src="../imgFolder/otrosServicios/otrosServicios8.webp" alt="imagen general de otros servicios" class="esp">
+            <img src="../imgFolder/otrosServicios/otrosServicios8.webp" alt="imagen general de otros servicios" class="esp" loading="lazy">
           </div>
         </div>
       </section>
@@ -221,10 +231,6 @@
         <a class="ig" href="https://www.instagram.com/gabisol_2026?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer"> 
           <i class="fa-brands fa-instagram"></i>
           HerreriaG&S
-        </a>
-        <a class="f" href="#"> 
-          <i class="fa-brands fa-facebook"></i>
-          jhonDoeF 
         </a>
       </div>
       <div class="foot">
