@@ -136,17 +136,15 @@
   #proyectos-herreria ul{
     padding: 1rem 0;
     margin: 1rem 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2px;
-  }
-  #proyectos-herreria .especifico{
-    padding: 1rem 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+
     gap: 5px;
+  }
+  #proyectos-herreria ul .esp{
+    margin-bottom: 0.2rem;
+    grid-column: 1 / -1;
+    justify-self: center;
   }
   #proyectos-herreria li{
     margin-bottom: 0;

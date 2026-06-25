@@ -11,12 +11,12 @@
     <meta name="description" content="Herrería G&S en Montevideo. Fabricación e instalación de portones, escaleras, techos, estructuras metálicas y soluciones para el hogar y empresas.">
     <meta property="og:title" content="Herrería G&S">
     <meta property="og:description" content="Fabricación e instalación de portones, techos, escaleras y estructuras metálicas.">
-    <meta property="og:image" content="../imgFolder/marca/G&S logotipo negro.png">
+    <meta property="og:image" content="#">
     <meta property="og:type" content="website">
     <!--titulo mostrado por google-->
     <title>Herrería G&S | Herrería para Hogares y Empresas en Montevideo</title>
     <!--vinculos tanto para los iconos como para los archivos que ayudan a organizar la pagina-->
-    <link rel="icon" type="image/png" href="../imgFolder/marca/favicon.ico">
+    <link rel="icon" href="../imgFolder/marca/favicon.ico">
   
     <link rel="stylesheet" href="CSS/menuHamburguesa.css">
     <link rel="stylesheet" href="CSS/root.css" />
@@ -81,8 +81,7 @@
               Pedir presupuesto
           </a>
         </div>
-        <div class="hero-img" fetch>
-        </div>
+        <div class="hero-img"></div>
       </section>
       <div class="transicion transicion1"> 
         <div></div> <!--aplica una ligera gradiente sobre la imagen-->
@@ -94,7 +93,15 @@
         </div>
         <div class="contenido-sobre-nosotros">
           <!--"p" indica un parrafo-->
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ad repellat quae nihil nisi laborum rerum delectus eaque reiciendis, quia ullam laudantium perferendis pariatur voluptates at odio amet incidunt. Vero!</p>
+          <p>
+            En Herrería G&S somos una empresa familiar dedicada a la herrería y a las soluciones para el hogar. <br>
+
+            Realizamos portones, rejas, escaleras, techos, cerramientos, restauraciones y otros trabajos en metal, además de tareas de mantenimiento y mejoras generales. <br> 
+
+            Nos enfocamos en ofrecer trabajos prolijos, resistentes y adaptados a cada proyecto, acompañando al cliente desde la idea inicial hasta la instalación final. <br>
+            <br>
+            PRESUPUESTOS SIN CARGO!.
+          </p>
         </div>
       </section>
       <div class="transicion transicion2">
@@ -110,47 +117,43 @@
             <!--"ul" declara una lista que no sigue ningun orden especifico (1,2,3,...)-->
             <ul>
               <!--"li" declara que el elemento pertenece a una lista-->
-              <div>
-                <li>
-                  <!--"categoria-activa" es la categoria que se muestra (gracias a JavaScript)
-                  data-categoria indica el contenido de la misma-->
-                  <button class="categoria categoria-activa" data-categoria="todos">
-                    TODOS
-                  </button>
-                </li>
-              </div>
-              <div class="especifico">
-                <li>
-                  <button class="categoria" data-categoria="escaleras">
-                    ESCALERAS
-                  </button>
-                </li>
-                <li>
-                  <button class="categoria" data-categoria="puertasYportones">
-                    PUERTAS Y PORTONES
-                  </button>
-                </li>
-                <li>
-                  <button class="categoria" data-categoria="techos">
-                    TECHOS
-                  </button>
-                </li>
-                <li>
-                  <button class="categoria" data-categoria="decoraciones">
-                    DECORACIONES
-                  </button>
-                </li>
-                <li>
-                  <button class="categoria" data-categoria="mobiliarios">
-                    MOBILIARIO
-                  </button>
-                </li>
-                <li>
-                  <button class="categoria" data-categoria="ventanas">
-                    VENTANAS
-                  </button>
-                </li>
-              </div>
+              <li class="esp">
+                <!--"categoria-activa" es la categoria que se muestra (gracias a JavaScript)
+                data-categoria indica el contenido de la misma-->
+                <button class="categoria categoria-activa" data-categoria="todos">
+                  TODOS
+                </button>
+              </li>
+              <li>
+                <button class="categoria" data-categoria="escaleras">
+                  ESCALERAS
+                </button>
+              </li>
+              <li>
+                <button class="categoria" data-categoria="puertasYportones">
+                  PUERTAS Y PORTONES
+                </button>
+              </li>
+              <li>
+                <button class="categoria" data-categoria="techos">
+                  TECHOS
+                </button>
+              </li>
+              <li>
+                <button class="categoria" data-categoria="decoraciones">
+                  DECORACIONES
+                </button>
+              </li>
+              <li>
+                <button class="categoria" data-categoria="mobiliarios">
+                  MOBILIARIO
+                </button>
+              </li>
+              <li>
+                <button class="categoria" data-categoria="ventanas">
+                  VENTANAS
+                </button>
+              </li>
             </ul>
           </div>
         </div>

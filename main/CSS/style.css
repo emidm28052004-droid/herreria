@@ -98,7 +98,7 @@ section{
   border-top: 3px solid black;
   border-bottom: 3px solid black;
   padding: 6rem 1rem;
-  background-color: var(--Bg-Main);
+  background: linear-gradient( 120deg, rgba(180, 82, 44, 0.63), var(--Bg-Main), rgba(180, 44, 67, 0.568));
   gap: 2rem; /*define la separacion entre los elementos hijos de un contenedor*/
 }
 #sobre-nosotros h2{
