@@ -530,3 +530,31 @@ Observaciones
 -Rendimiento ordenador 100 
 -Rendimiento en movil 74, parece que el pasar todo el css a una sola carpeta lo ha empeorado?
 -Fase final, resta unicamente informacion del cliente
+
+
+
+
+Día 12
+
+horas trabajadas: 2h
+
+Logrado
+-Se corrigieron errores ligeros
+-Se mejoro el rendimiento
+-Se optimizaron imagenes
+-Se agregaron los horarios a google busines
+-Se modifico el instagram para ajustarlo a la tematica
+-Informacion de contacto completa
+
+Pendientes técnicos:
+-Agregar imágenes adicionales a la galería.
+-Realizar auditoría final con Lighthouse antes de la entrega.
+-Sustituir font awezome
+
+Pendientes del cliente:
+-Brindar información para la sección "Sobre Nosotros".
+
+Observaciones
+-Rendimiento ordenador 100 
+-Rendimiento en movil entre 85 y 99
+-Fase final, resta unicamente informacion del cliente
