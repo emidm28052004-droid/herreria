@@ -13,6 +13,9 @@ section{
   min-height: calc(100vh - 60px);
 }
 
+
+/*/////////////////////////////////////////////////////////////////*/
+/*hero (primera imagen que se ve al abrir la pagina)*/
 .hero{
   display: flex; /*apila los elmentos uno debajo del otro*/
   text-align: center;
@@ -68,6 +71,9 @@ section{
   background-repeat: no-repeat;
 }
 
+
+/*////////////////////////////////////////////////////////////////*/
+/*trancisiones*/
 .transicion1{
   background-image: url(../../imgFolder/Trancision/transicion1.webp);
 }
@@ -90,6 +96,9 @@ section{
   background: radial-gradient(#b554, #5394);
 }
 
+
+/*////////////////////////////////////////////////////////////*/
+/*seccion sobre nosotros*/
 #sobre-nosotros{ /*el selector # refiere al id especifico*/
   display: flex;
   flex-direction: column;
@@ -100,6 +109,7 @@ section{
   padding: 6rem 1rem;
   background: linear-gradient( 120deg, rgba(180, 82, 44, 0.63), var(--Bg-Main), rgba(180, 44, 67, 0.568));
   gap: 2rem; /*define la separacion entre los elementos hijos de un contenedor*/
+  text-shadow: 0 0 5px gray;
 }
 #sobre-nosotros h2{
   font-size: clamp(2rem, 4.5vh, 3rem);
@@ -117,7 +127,16 @@ section{
   font-size: clamp(1rem, 3vh, 2.5rem);
   max-width: 800px;
 }
+.contenido-sobre-nosotros a{
+  font-size: clamp(1rem, 3.5vh, 2.5rem);
+  max-width: 800px;
+  color: black;
+  text-decoration: none;
+}
 
+
+/*///////////////////////////////////////////////////////////////*/
+/*Seccion otros servicio*/
 #otros-servicios{
   border-top:  3px solid black;
 }
@@ -125,7 +144,7 @@ section{
   padding: 2rem;
   color: var(--FontColor-Primary);
   background: linear-gradient(var(--Bg-Secondary), rgba(50, 50, 50, 0.1));
-  text-shadow: 0 0 2px white;
+  text-shadow: 0 0 5px gray;
 }
 #otros-servicios h2{
   font-size: clamp(3rem, 5vh, 5rem);
@@ -174,6 +193,9 @@ section{
   margin: 4rem 1.5rem;
 }
 
+
+/*/////////////////////////////////////////////////////////////*/
+/*Fotter (seccion contactenos)*/
 #contactenos{
   width: 100%;
   padding: 10px 0;
@@ -222,39 +244,11 @@ section{
 }
 
 
-
-
+/*//////////////////////////////////////////////////////////////*/
+/*media querys*/
 @media(max-width:1024px){
   section{
     scroll-margin-top: 19rem;
-  }
-}
-
-@media(max-width:1024px){
-  #contactenos .informacion-contacto{
-    padding: 0;
-    margin-left: 0;
-  }
-    #contactenos .foot{
-    display: flex;
-    align-items: center;
-  }
-    #contactenos .foot img{
-    height: 3.5rem;
-    width: 3.5rem;
-    display: block;
-    margin-left: 0 1rem;
-  }
-    #contactenos .foot p{
-    display: flex;
-    justify-content: center;/*centra verticalmente*/
-    margin: 0 1rem;
-  }
-}
-
-@media(max-width:1024px){
-  .transicion{
-    height: 20rem;
   }
 }
 
@@ -279,6 +273,25 @@ section{
   .hero .boton-presupuesto{
     margin: 0 1.5rem;
     font-size: clamp(1rem, 3.5vh, 2rem);;
+  }
+}
+
+@media(max-width:1024px){
+  .transicion{
+    height: 20rem;
+  }
+}
+
+@media(max-width:1024px){
+  .contenido-sobre-nosotros{
+    font-size: clamp(1rem, 2vh, 2.5rem);
+    max-width: 600px;
+  }
+  .contenido-sobre-nosotros a{
+    font-size: clamp(1rem, 2.5vh, 2.5rem);
+    max-width: 600px;
+    color: black;
+    text-decoration: none;
   }
 }
 
@@ -313,6 +326,27 @@ section{
   }
 }
 
+@media(max-width:1024px){
+  #contactenos .informacion-contacto{
+    padding: 0;
+    margin-left: 0;
+  }
+    #contactenos .foot{
+    display: flex;
+    align-items: center;
+  }
+    #contactenos .foot img{
+    height: 3.5rem;
+    width: 3.5rem;
+    display: block;
+    margin-left: 0 1rem;
+  }
+    #contactenos .foot p{
+    display: flex;
+    justify-content: center;/*centra verticalmente*/
+    margin: 0 1rem;
+  }
+}
 @media(max-width:500px){
   #contactenos .informacion-contacto a{
     margin-left: 8rem;
